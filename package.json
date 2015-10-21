@@ -24,7 +24,9 @@
     "url": "https://github.com/pushrocks/smarturl/issues"
   },
   "homepage": "https://github.com/pushrocks/smarturl",
-  "dependencies": {},
+  "dependencies": {
+    "open": "0.0.5"
+  },
   "devDependencies": {
     "gulp": "3.9.0",
     "gulp-typescript": "2.9.2"
