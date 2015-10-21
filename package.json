@@ -1,6 +1,6 @@
 {
   "name": "smarturl",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "offers smart ways to handle URLs",
   "main": "index.js",
   "scripts": {
