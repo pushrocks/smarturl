@@ -1,8 +1,9 @@
 /// <reference path="typings/tsd.d.ts" />
 var path = require("path");
-var open = require("open");
+var openURL = require("open");
 
 var smarturl:any = {};
+smarturl.open = openURL;
 
 
 
