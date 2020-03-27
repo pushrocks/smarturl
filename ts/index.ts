@@ -1,10 +1,3 @@
-/// <reference path="typings/tsd.d.ts" />
-var path = require("path");
-var openURL = require("open");
+import * as plugins from './smarturl.plugins';
 
-var smarturl:any = {};
-smarturl.open = openURL;
-
-
-
-module.exports = smarturl;
+export let standardExport = 'Hi there! :) This is an exported string';

@@ -1,34 +1,36 @@
 {
-  "name": "smarturl",
-  "version": "0.0.4",
-  "description": "offers smart ways to handle URLs",
-  "main": "index.js",
-  "scripts": {
-    "test": "(cd ts/compile && gulp)",
-    "reinstall": "(rm -r node_modules && npm install)",
-    "release": "(git pull origin master && npm version patch && git push origin master && git checkout release && git merge master && git push origin release && git checkout master)",
-    "startdev": "(git checkout master && git pull origin master)"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pushrocks/smarturl.git"
-  },
-  "keywords": [
-    "json",
-    "jade",
-    "template"
-  ],
-  "author": "Smart Coordination GmbH <office@push.rocks> (https://push.rocks)",
+  "name": "@pushrocks/smarturl",
+  "version": "1.0.1",
+  "private": false,
+  "description": "a url parsing lib",
+  "main": "dist_ts/index.js",
+  "typings": "dist_ts/index.d.ts",
+  "author": "Lossless GmbH",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pushrocks/smarturl/issues"
-  },
-  "homepage": "https://github.com/pushrocks/smarturl",
-  "dependencies": {
-    "open": "0.0.5"
+  "scripts": {
+    "test": "(tstest test/)",
+    "build": "(tsbuild)",
+    "format": "(gitzone format)"
   },
   "devDependencies": {
-    "gulp": "3.9.0",
-    "gulp-typescript": "2.9.2"
-  }
+    "@gitzone/tsbuild": "^2.0.22",
+    "@gitzone/tstest": "^1.0.15",
+    "@pushrocks/tapbundle": "^3.0.7",
+    "@types/node": "^10.11.7",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0"
+  },
+  "dependencies": {},
+  "files": [
+    "ts/**/*",
+    "ts_web/**/*",
+    "dist/**/*",
+    "dist_*/**/*",
+    "dist_ts/**/*",
+    "dist_ts_web/**/*",
+    "assets/**/*",
+    "cli.js",
+    "npmextra.json",
+    "readme.md"
+  ]
 }
