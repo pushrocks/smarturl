@@ -1,6 +1,6 @@
 {
   "name": "@pushrocks/smarturl",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": false,
   "description": "a url parsing lib",
   "main": "dist_ts/index.js",
