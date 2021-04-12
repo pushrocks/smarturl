@@ -8,4 +8,9 @@ tap.test('first test', async () => {
   expect(testSmarturl).to.be.instanceOf(smarturl.Smarturl);
 });
 
+tap.test('should parse an URL', async () => {
+  const parsedUrl = testSmarturl.parseUrl('https://lossless.com');
+  console.log(parsedUrl);
+});
+
 tap.start();
