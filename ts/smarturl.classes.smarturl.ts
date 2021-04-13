@@ -33,11 +33,11 @@ export class Smarturl {
       hash: parsedUrlInstance.hash,
     };
     if (!parsedUrl.port && parsedUrl.protocol === 'https:') {
-      console.log(`inferring port 443 for "https:"`);
+      // console.log(`inferring port 443 for "https:"`);
       parsedUrl.port = '443';
     }
     if (!parsedUrl.port && parsedUrl.protocol === 'http:') {
-      console.log(`inferring port 80 for "http:"`);
+      // console.log(`inferring port 80 for "http:"`);
       parsedUrl.port = '80';
     }
     return parsedUrl;
