@@ -83,7 +83,11 @@ export class Smarturl implements IUrlObject {
     Object.assign(returnSmarturl, parsedUrl);
     return returnSmarturl;
   }
-  public static createFromParsedUrl() {}
+  public static createFromParsedUrl(parsedUrlArg: IUrlObject) {
+    const returnSmarturl = new Smarturl();
+    Object.assign(returnSmarturl, parsedUrlArg);
+    return returnSmarturl;
+  }
 
   // INSTANCE
   href: string;
